@@ -1,0 +1,1847 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Camuniv</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+  
+    <link rel="stylesheet" href="css/level_style.css">
+    <link rel="stylesheet" href="css/cscCourses/course_details.css">
+    <link rel="stylesheet" href="css/style.css"><!--205 : :It works Perfectly-->
+    <!-- <link rel="stylesheet" href="css/cscCourses/style4coursedetinfo2.css">
+    <link rel="stylesheet" href="css/cscCourses/style4coursedetinfo3.css"> 
+    <link rel="stylesheet" href="css/cscCourses/style4coursedetinfo4.css"> 
+    <link rel="stylesheet" href="css/cscCourses/style4coursedetinfo5.css">
+    <link rel="stylesheet" href="css/cscCourses/style4coursedetinfo6.css"> 
+    <link rel="stylesheet" href="css/cscCourses/style4coursedetinfo7.css">  -->
+   
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a  href="index.html">home</a></li>
+                                        <li><a class="active" href="dept.html">Level</a></li>
+                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="course_details.html">course details</a></li>
+                                                <li><a href="elements.html">elements</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">blog</a></li>
+                                                <li><a href="single-blog.html">single-blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="log_chat_area d-flex align-items-center">
+                                <a href="#test-form" class="login popup-with-form">
+                                    <i class="flaticon-user"></i>
+                                    <span>log in</span>
+                                </a>
+                                <div class="live_chat_btn">
+                                    <a class="boxed_btn_orange" href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>+237 671 206 823</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+        <!-- bradcam_area_start -->
+        <div class="bradcam_area breadcam_bg overlay2">
+            <h3>Select the Level</h3>
+        </div>
+        <!-- bradcam_area_end -->
+
+    <!-- popular_courses_start -->
+    
+<!-- Level & Faculty -->
+	 <div >Level:
+                <select class="level" id="levels" name="levels" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                <option value="" class="custom-option selected">Select Level</option>
+                <option value="lvl200" class="custom-option">Level 200</option>
+                <option value="lvl300" class="custom-option">Level 300</option>
+		        <option value="lvl400" class="custom-option">Level 400</option>
+                </select>
+        
+        
+    </div>
+
+    <div class="category_div" id="category_div">Faculty:
+        <script type="text/javascript" language="JavaScript">
+        document.write('<select name="fac" id="fac" onchange="javascript: dynamicdropdown1(this.options[this.selectedIndex].value);"><option value="">Select Faculty</option></select>')
+        </script>
+        <noscript>
+        <select id="fac" name="fac">
+            <option value="fa1">Faculty of Arts</option>
+            <option value="fs1">Faculty of Science</option>
+        </select>
+        </noscript>
+    </div>
+    <!-- try -->
+    <div class="sub_category_div" id="sub_category_div">Department:
+        <script type="text/javascript" language="JavaScript">
+        document.write('<select name="dept" id="dept" onchange="javascript: dynamicdropdown2(this.options[this.selectedIndex].value);"><option value="">Select Department</option></select>')
+        </script>
+        <noscript>
+        <select id="dept" name="dept">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+        </select>
+        </noscript>
+    </div>
+    <!-- try 2 -->
+    <div class="sub_category_div" id="sub_category_div">Course:
+        <script type="text/javascript" language="JavaScript">
+        document.write('<select name="course" id="course" onchange="javascript: dynamicCourseDetails(this.options[this.selectedIndex].value);"><option value="">Select Course</option></select>')
+        </script>
+        <noscript>
+        <select id="course" name="course">
+            <option value="csc205">Introduction to Computer Science</option>
+            <option value="csc207">Introduction to Algorithms</option>
+        </select>
+        </noscript>
+    </div>
+
+	 <hr>
+    <!-- our_courses_end -->
+<!-- broadcam_area_start -->
+
+<!-- This One for CSC 205 -->
+<div class="events page_section">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col">
+                <div class="section_title text-center">
+                    </h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="event_items">
+
+            <!-- Event Item -->
+            <div class="row event_item">
+                <div class="col">
+                    <div class="row d-flex flex-row align-items-end">
+
+                        <div class="col-lg-2 order-lg-1 order-2">
+                            <div class="event_date d-flex flex-column align-items-center justify-content-center">
+                                <div class="event_day">CSC</div>
+                                <div class="event_month">205</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 order-lg-2 order-3">
+                            <div class="event_content">
+                                <div class="event_name"><a class="trans_200" href="#">Student Festival</a></div>
+                                <div class="event_location">Grand Central Park</div>
+                                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 order-lg-3 order-1">
+                            <div class="event_image">
+                                <img src="images/event_1.jpg" alt="https://unsplash.com/@theunsteady5">
+                            </div>
+                        </div>
+
+                    </div>	
+                </div>
+            </div>
+
+            <!-- Event Item -->
+            <div class="row event_item">
+                <div class="col">
+                    <div class="row d-flex flex-row align-items-end">
+
+                        <div class="col-lg-2 order-lg-1 order-2">
+                            <div class="event_date d-flex flex-column align-items-center justify-content-center">
+                                <div class="event_day">07</div>
+                                <div class="event_month">January</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 order-lg-2 order-3">
+                            <div class="event_content">
+                                <div class="event_name"><a class="trans_200" href="#">Open day in the Univesrsity campus</a></div>
+                                <div class="event_location">Grand Central Park</div>
+                                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 order-lg-3 order-1">
+                            <div class="event_image">
+                                <img src="images/event_2.jpg" alt="https://unsplash.com/@claybanks1989">
+                            </div>
+                        </div>
+
+                    </div>	
+                </div>
+            </div>
+
+            <!-- Event Item -->
+            <div class="row event_item">
+                <div class="col">
+                    <div class="row d-flex flex-row align-items-end">
+
+                        <div class="col-lg-2 order-lg-1 order-2">
+                            <div class="event_date d-flex flex-column align-items-center justify-content-center">
+                                <div class="event_day">07</div>
+                                <div class="event_month">January</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 order-lg-2 order-3">
+                            <div class="event_content">
+                                <div class="event_name"><a class="trans_200" href="#">Student Graduation Ceremony</a></div>
+                                <div class="event_location">Grand Central Park</div>
+                                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 order-lg-3 order-1">
+                            <div class="event_image">
+                                <img src="images/event_3.jpg" alt="https://unsplash.com/@juanmramosjr">
+                            </div>
+                        </div>
+
+                    </div>	
+                </div>
+            </div>
+
+        </div>
+            
+    </div>
+</div>
+<!-- TEsting -->
+<div class="courses_details_info1" id="courses_details_info1">
+<div class="courses_details_banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="course_text">
+                       <h3>CSC 205<br>Introduction to Computer Science</h3>
+                       <div class="prise">
+                           <span class="inactive">XAF500</span>
+                           <span class="active">free</span>
+                       </div>
+                       <div class="rating">
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <span>(4.5)</span>
+                       </div>
+                       <div class="hours">
+                           <div class="video">
+                                <div class="single_video">
+                                       <i class="fa fa-clock-o"></i> <span>10 CA Questions</span>
+                                </div>
+                                <div class="single_video">
+                                       <i class="fa fa-play-circle-o"></i> <span>8 Exam Questions</span>
+                                </div>
+                              
+                           </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bradcam_area_end -->
+
+<div class="courses_details_infos" id="courses_details_infos">
+   <div class="container">
+       <div class="row">
+           <div class="col-xl-7 col-lg-7">
+               <div class="single_courses">
+                   <h3>CSC205</h3>
+                   <p>Every course requires the maximum prep time. Not only that but good preparation Resources as well. Every course is different.Keeping this in mind, we have gathered some past questions that you can benefit from. </p>
+               <h3 class="second_title">Course Past Questions Organised by Year</h3>
+               </div>
+               <div class="outline_courses_info">
+                       <div id="accordion">
+                               <div class="card">
+                                   <div class="card-header" id="headingTwo">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                               <i class="flaticon-question"></i> 2020 First Semester Examination
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="Functional Prog.pdf" class="boxed_btn" target="_blank">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="headingOne">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                               <i class="flaticon-question"></i>2020 Class Assessment (CA) </span>
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="headingThree">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                               <i class="flaticon-question"></i> 2019 Second Semester Examination
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="heading_4">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                               <i class="flaticon-question"></i> 2019 First Semester Examination
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="heading_5">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                               <i class="flaticon-question"></i> 2019 <span>Class Assessment (CA)
+                                                   </span>
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+               </div>
+           </div>
+           <div class="col-xl-5 col-lg-5">
+               <div class="courses_sidebar">
+                   <div class="video_thumb">
+                       <img src="img/latest_blog/video.png" alt="">
+                       <a class="popup-video" href="https://www.youtube.com/watch?v=AjgD3CvWzS0">
+                           <i class="fa fa-play"></i>
+                       </a>
+                   </div>
+                   <div class="author_info">
+                       <div class="auhor_header">
+                           <div class="thumb">
+                                   <img src="img/latest_blog/author.png" alt="">
+                           </div>
+                           <div class="name">
+                               <h3>Salathiel Ojage</h3>
+                               <p>Web Developer</p>
+                           </div>
+                       </div>
+                       <p class="text_info">
+                           Download and study the questions, be prepared Exams are coming.
+                       </p>
+                       <ul>
+                           <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+                           <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                           <li><a href="#"> <i class="ti-linkedin"></i> </a></li>
+                       </ul>
+                   </div>
+                   
+                   <div class="feedback_info">
+                       <h3>Write your feedback</h3>
+                       <p>Your rating</p>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       
+                   <form action="#">
+                           <textarea name="" id="" cols="30" rows="10" placeholder="Write your feedback"></textarea>
+                           <button type="submit" class="boxed_btn">Submit</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+</div>
+<!-- End Of CSC 205 -->
+<!-- Start of CSC 207 -->
+<div class="courses_details_info2" id="courses_details_info2">
+    <div class="courses_details_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="course_text">
+                           <h3>CSC 207<br>Introduction to Algorithms</h3>
+                           <div class="prise">
+                               <span class="inactive">XAF500</span>
+                               <span class="active">free</span>
+                           </div>
+                           <div class="rating">
+                               <i class="flaticon-mark-as-favorite-star"></i>
+                               <i class="flaticon-mark-as-favorite-star"></i>
+                               <i class="flaticon-mark-as-favorite-star"></i>
+                               <i class="flaticon-mark-as-favorite-star"></i>
+                               <i class="flaticon-mark-as-favorite-star"></i>
+                               <span>(4.5)</span>
+                           </div>
+                           <div class="hours">
+                               <div class="video">
+                                    <div class="single_video">
+                                           <i class="fa fa-clock-o"></i> <span>10 CA Questions</span>
+                                    </div>
+                                    <div class="single_video">
+                                           <i class="fa fa-play-circle-o"></i> <span>8 Exam Questions</span>
+                                    </div>
+                                  
+                               </div>
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bradcam_area_end -->
+    
+    <div class="courses_details_infos" id="courses_details_infos">
+       <div class="container">
+           <div class="row">
+               <div class="col-xl-7 col-lg-7">
+                   <div class="single_courses">
+                       <h3>CSC207</h3>
+                       <p>Every course requires the maximum prep time. Not only that but good preparation Resources as well. Every course is different.Keeping this in mind, we have gathered some past questions that you can benefit from. </p>
+                   <h3 class="second_title">Course Past Questions Organised by Year</h3>
+                   </div>
+                   <div class="outline_courses_info">
+                           <div id="accordion">
+                                   <div class="card">
+                                       <div class="card-header" id="headingTwo">
+                                           <h5 class="mb-0">
+                                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                   <i class="flaticon-question"></i> 2020 First Semester Examination
+                                               </button>
+                                           </h5>
+                                       </div>
+                                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                           <div class="card-body">
+                                            <a href="Functional Prog.pdf" class="boxed_btn" target="_blank">Get Questions</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <div class="card-header" id="headingOne">
+                                           <h5 class="mb-0">
+                                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                   <i class="flaticon-question"></i>2020 Class Assessment (CA) </span>
+                                               </button>
+                                           </h5>
+                                       </div>
+                                       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                           <div class="card-body">
+                                            <a href="#" class="boxed_btn">Get Questions</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <div class="card-header" id="headingThree">
+                                           <h5 class="mb-0">
+                                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                   <i class="flaticon-question"></i> 2019 Second Semester Examination
+                                               </button>
+                                           </h5>
+                                       </div>
+                                       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                           <div class="card-body">
+                                            <a href="#" class="boxed_btn">Get Questions</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <div class="card-header" id="heading_4">
+                                           <h5 class="mb-0">
+                                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                                   <i class="flaticon-question"></i> 2019 First Semester Examination
+                                               </button>
+                                           </h5>
+                                       </div>
+                                       <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion">
+                                           <div class="card-body">
+                                            <a href="#" class="boxed_btn">Get Questions</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <div class="card-header" id="heading_5">
+                                           <h5 class="mb-0">
+                                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                                   <i class="flaticon-question"></i> 2019 <span>Class Assessment (CA)
+                                                       </span>
+                                               </button>
+                                           </h5>
+                                       </div>
+                                       <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+                                           <div class="card-body">
+                                            <a href="#" class="boxed_btn">Get Questions</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                   </div>
+               </div>
+               <div class="col-xl-5 col-lg-5">
+                   <div class="courses_sidebar">
+                       <div class="video_thumb">
+                           <img src="img/latest_blog/video.png" alt="">
+                           <a class="popup-video" href="https://www.youtube.com/watch?v=AjgD3CvWzS0">
+                               <i class="fa fa-play"></i>
+                           </a>
+                       </div>
+                       <div class="author_info">
+                           <div class="auhor_header">
+                               <div class="thumb">
+                                       <img src="img/latest_blog/author.png" alt="">
+                               </div>
+                               <div class="name">
+                                   <h3>Salathiel Ojage</h3>
+                                   <p>Web Developer</p>
+                               </div>
+                           </div>
+                           <p class="text_info">
+                               Download and study the questions, be prepared Exams are coming.
+                           </p>
+                           <ul>
+                               <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+                               <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                               <li><a href="#"> <i class="ti-linkedin"></i> </a></li>
+                           </ul>
+                       </div>
+                       
+                       <div class="feedback_info">
+                           <h3>Write your feedback</h3>
+                           <p>Your rating</p>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           
+                       <form action="#">
+                               <textarea name="" id="" cols="30" rows="10" placeholder="Write your feedback"></textarea>
+                               <button type="submit" class="boxed_btn">Submit</button>
+                           </form>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+    
+    </div>
+    <!-- End of CSC 207 -->
+    <!-- Start of CSC 209 -->
+    <div class="courses_details_info3" id="courses_details_info3">
+        <div class="courses_details_banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="course_text">
+                               <h3>CSC 209<br>Mathematical Foundations of Computer Science</h3>
+                               <div class="prise">
+                                   <span class="inactive">XAF500</span>
+                                   <span class="active">free</span>
+                               </div>
+                               <div class="rating">
+                                   <i class="flaticon-mark-as-favorite-star"></i>
+                                   <i class="flaticon-mark-as-favorite-star"></i>
+                                   <i class="flaticon-mark-as-favorite-star"></i>
+                                   <i class="flaticon-mark-as-favorite-star"></i>
+                                   <i class="flaticon-mark-as-favorite-star"></i>
+                                   <span>(4.5)</span>
+                               </div>
+                               <div class="hours">
+                                   <div class="video">
+                                        <div class="single_video">
+                                               <i class="fa fa-clock-o"></i> <span>11 CA Questions</span>
+                                        </div>
+                                        <div class="single_video">
+                                               <i class="fa fa-play-circle-o"></i> <span>7 Exam Questions</span>
+                                        </div>
+                                      
+                                   </div>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bradcam_area_end -->
+        
+        <div class="courses_details_infos" id="courses_details_infos">
+           <div class="container">
+               <div class="row">
+                   <div class="col-xl-7 col-lg-7">
+                       <div class="single_courses">
+                           <h3>CSC209</h3>
+                           <p>Every course requires the maximum prep time. Not only that but good preparation Resources as well. Every course is different.Keeping this in mind, we have gathered some past questions that you can benefit from. </p>
+                       <h3 class="second_title">Course Past Questions Organised by Year</h3>
+                       </div>
+                       <div class="outline_courses_info">
+                               <div id="accordion">
+                                       <div class="card">
+                                           <div class="card-header" id="headingTwo">
+                                               <h5 class="mb-0">
+                                                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                       <i class="flaticon-question"></i> 2020 First Semester Examination
+                                                   </button>
+                                               </h5>
+                                           </div>
+                                           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                               <div class="card-body">
+                                                <a href="Functional Prog.pdf" class="boxed_btn" target="_blank">Get Questions</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="card">
+                                           <div class="card-header" id="headingOne">
+                                               <h5 class="mb-0">
+                                                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                       <i class="flaticon-question"></i>2020 Class Assessment (CA) </span>
+                                                   </button>
+                                               </h5>
+                                           </div>
+                                           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                               <div class="card-body">
+                                                <a href="#" class="boxed_btn">Get Questions</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="card">
+                                           <div class="card-header" id="headingThree">
+                                               <h5 class="mb-0">
+                                                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                       <i class="flaticon-question"></i> 2019 Second Semester Examination
+                                                   </button>
+                                               </h5>
+                                           </div>
+                                           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                               <div class="card-body">
+                                                <a href="#" class="boxed_btn">Get Questions</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="card">
+                                           <div class="card-header" id="heading_4">
+                                               <h5 class="mb-0">
+                                                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                                       <i class="flaticon-question"></i> 2019 First Semester Examination
+                                                   </button>
+                                               </h5>
+                                           </div>
+                                           <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion">
+                                               <div class="card-body">
+                                                <a href="#" class="boxed_btn">Get Questions</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="card">
+                                           <div class="card-header" id="heading_5">
+                                               <h5 class="mb-0">
+                                                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                                       <i class="flaticon-question"></i> 2019 <span>Class Assessment (CA)
+                                                           </span>
+                                                   </button>
+                                               </h5>
+                                           </div>
+                                           <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+                                               <div class="card-body">
+                                                <a href="#" class="boxed_btn">Get Questions</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-5 col-lg-5">
+                       <div class="courses_sidebar">
+                           <div class="video_thumb">
+                               <img src="img/latest_blog/video.png" alt="">
+                               <a class="popup-video" href="https://www.youtube.com/watch?v=AjgD3CvWzS0">
+                                   <i class="fa fa-play"></i>
+                               </a>
+                           </div>
+                           <div class="author_info">
+                               <div class="auhor_header">
+                                   <div class="thumb">
+                                           <img src="img/latest_blog/author.png" alt="">
+                                   </div>
+                                   <div class="name">
+                                       <h3>Salathiel Ojage</h3>
+                                       <p>Web Developer</p>
+                                   </div>
+                               </div>
+                               <p class="text_info">
+                                   Download and study the questions, be prepared Exams are coming.
+                               </p>
+                               <ul>
+                                   <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+                                   <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                   <li><a href="#"> <i class="ti-linkedin"></i> </a></li>
+                               </ul>
+                           </div>
+                           
+                           <div class="feedback_info">
+                               <h3>Write your feedback</h3>
+                               <p>Your rating</p>
+                               <i class="flaticon-mark-as-favorite-star"></i>
+                               <i class="flaticon-mark-as-favorite-star"></i>
+                               <i class="flaticon-mark-as-favorite-star"></i>
+                               <i class="flaticon-mark-as-favorite-star"></i>
+                               <i class="flaticon-mark-as-favorite-star"></i>
+                               
+                           <form action="#">
+                                   <textarea name="" id="" cols="30" rows="10" placeholder="Write your feedback"></textarea>
+                                   <button type="submit" class="boxed_btn">Submit</button>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+        
+        </div>
+        <!-- End of CSC 209 -->
+        <!-- Start of CSC 210 -->
+        <div class="courses_details_info4" id="courses_details_info4">
+            <div class="courses_details_banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="course_text">
+                                   <h3>CSC 210<br>Matrices and Linear Transformations</h3>
+                                   <div class="prise">
+                                       <span class="inactive">XAF500</span>
+                                       <span class="active">free</span>
+                                   </div>
+                                   <div class="rating">
+                                       <i class="flaticon-mark-as-favorite-star"></i>
+                                       <i class="flaticon-mark-as-favorite-star"></i>
+                                       <i class="flaticon-mark-as-favorite-star"></i>
+                                       <i class="flaticon-mark-as-favorite-star"></i>
+                                       <i class="flaticon-mark-as-favorite-star"></i>
+                                       <span>(4.5)</span>
+                                   </div>
+                                   <div class="hours">
+                                       <div class="video">
+                                            <div class="single_video">
+                                                   <i class="fa fa-clock-o"></i> <span>10 CA Questions</span>
+                                            </div>
+                                            <div class="single_video">
+                                                   <i class="fa fa-play-circle-o"></i> <span>8 Exam Questions</span>
+                                            </div>
+                                          
+                                       </div>
+                                   </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bradcam_area_end -->
+            
+            <div class="courses_details_infos" id="courses_details_infos">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xl-7 col-lg-7">
+                           <div class="single_courses">
+                               <h3>CSC210</h3>
+                               <p>Every course requires the maximum prep time. Not only that but good preparation Resources as well. Every course is different.Keeping this in mind, we have gathered some past questions that you can benefit from. </p>
+                           <h3 class="second_title">Course Past Questions Organised by Year</h3>
+                           </div>
+                           <div class="outline_courses_info">
+                                   <div id="accordion">
+                                           <div class="card">
+                                               <div class="card-header" id="headingTwo">
+                                                   <h5 class="mb-0">
+                                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                           <i class="flaticon-question"></i> 2020 First Semester Examination
+                                                       </button>
+                                                   </h5>
+                                               </div>
+                                               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                   <div class="card-body">
+                                                    <a href="Functional Prog.pdf" class="boxed_btn" target="_blank">Get Questions</a>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div class="card">
+                                               <div class="card-header" id="headingOne">
+                                                   <h5 class="mb-0">
+                                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                           <i class="flaticon-question"></i>2020 Class Assessment (CA) </span>
+                                                       </button>
+                                                   </h5>
+                                               </div>
+                                               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                                   <div class="card-body">
+                                                    <a href="#" class="boxed_btn">Get Questions</a>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div class="card">
+                                               <div class="card-header" id="headingThree">
+                                                   <h5 class="mb-0">
+                                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                           <i class="flaticon-question"></i> 2019 Second Semester Examination
+                                                       </button>
+                                                   </h5>
+                                               </div>
+                                               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                   <div class="card-body">
+                                                    <a href="#" class="boxed_btn">Get Questions</a>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div class="card">
+                                               <div class="card-header" id="heading_4">
+                                                   <h5 class="mb-0">
+                                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                                           <i class="flaticon-question"></i> 2019 First Semester Examination
+                                                       </button>
+                                                   </h5>
+                                               </div>
+                                               <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion">
+                                                   <div class="card-body">
+                                                    <a href="#" class="boxed_btn">Get Questions</a>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div class="card">
+                                               <div class="card-header" id="heading_5">
+                                                   <h5 class="mb-0">
+                                                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                                           <i class="flaticon-question"></i> 2019 <span>Class Assessment (CA)
+                                                               </span>
+                                                       </button>
+                                                   </h5>
+                                               </div>
+                                               <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+                                                   <div class="card-body">
+                                                    <a href="#" class="boxed_btn">Get Questions</a>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                           </div>
+                       </div>
+                       <div class="col-xl-5 col-lg-5">
+                           <div class="courses_sidebar">
+                               <div class="video_thumb">
+                                   <img src="img/latest_blog/video.png" alt="">
+                                   <a class="popup-video" href="https://www.youtube.com/watch?v=AjgD3CvWzS0">
+                                       <i class="fa fa-play"></i>
+                                   </a>
+                               </div>
+                               <div class="author_info">
+                                   <div class="auhor_header">
+                                       <div class="thumb">
+                                               <img src="img/latest_blog/author.png" alt="">
+                                       </div>
+                                       <div class="name">
+                                           <h3>Salathiel Ojage</h3>
+                                           <p>Web Developer</p>
+                                       </div>
+                                   </div>
+                                   <p class="text_info">
+                                       Download and study the questions, be prepared Exams are coming.
+                                   </p>
+                                   <ul>
+                                       <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+                                       <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                       <li><a href="#"> <i class="ti-linkedin"></i> </a></li>
+                                   </ul>
+                               </div>
+                               
+                               <div class="feedback_info">
+                                   <h3>Write your feedback</h3>
+                                   <p>Your rating</p>
+                                   <i class="flaticon-mark-as-favorite-star"></i>
+                                   <i class="flaticon-mark-as-favorite-star"></i>
+                                   <i class="flaticon-mark-as-favorite-star"></i>
+                                   <i class="flaticon-mark-as-favorite-star"></i>
+                                   <i class="flaticon-mark-as-favorite-star"></i>
+                                   
+                               <form action="#">
+                                       <textarea name="" id="" cols="30" rows="10" placeholder="Write your feedback"></textarea>
+                                       <button type="submit" class="boxed_btn">Submit</button>
+                                   </form>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+            
+            </div>
+            <!-- End of CSC 210 -->
+            <!-- Start of CSC 211 -->
+            <div class="courses_details_info5" id="courses_details_info5">
+                <div class="courses_details_banner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="course_text">
+                                       <h3>CSC 211<br>Statistics and Probability</h3>
+                                       <div class="prise">
+                                           <span class="inactive">XAF500</span>
+                                           <span class="active">free</span>
+                                       </div>
+                                       <div class="rating">
+                                           <i class="flaticon-mark-as-favorite-star"></i>
+                                           <i class="flaticon-mark-as-favorite-star"></i>
+                                           <i class="flaticon-mark-as-favorite-star"></i>
+                                           <i class="flaticon-mark-as-favorite-star"></i>
+                                           <i class="flaticon-mark-as-favorite-star"></i>
+                                           <span>(4.5)</span>
+                                       </div>
+                                       <div class="hours">
+                                           <div class="video">
+                                                <div class="single_video">
+                                                       <i class="fa fa-clock-o"></i> <span>10 CA Questions</span>
+                                                </div>
+                                                <div class="single_video">
+                                                       <i class="fa fa-play-circle-o"></i> <span>8 Exam Questions</span>
+                                                </div>
+                                              
+                                           </div>
+                                       </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bradcam_area_end -->
+                
+                <div class="courses_details_infos" id="courses_details_infos">
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-xl-7 col-lg-7">
+                               <div class="single_courses">
+                                   <h3>CSC211</h3>
+                                   <p>Every course requires the maximum prep time. Not only that but good preparation Resources as well. Every course is different.Keeping this in mind, we have gathered some past questions that you can benefit from. </p>
+                               <h3 class="second_title">Course Past Questions Organised by Year</h3>
+                               </div>
+                               <div class="outline_courses_info">
+                                       <div id="accordion">
+                                               <div class="card">
+                                                   <div class="card-header" id="headingTwo">
+                                                       <h5 class="mb-0">
+                                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                               <i class="flaticon-question"></i> 2020 First Semester Examination
+                                                           </button>
+                                                       </h5>
+                                                   </div>
+                                                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                       <div class="card-body">
+                                                        <a href="Functional Prog.pdf" class="boxed_btn" target="_blank">Get Questions</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                               <div class="card">
+                                                   <div class="card-header" id="headingOne">
+                                                       <h5 class="mb-0">
+                                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                               <i class="flaticon-question"></i>2020 Class Assessment (CA) </span>
+                                                           </button>
+                                                       </h5>
+                                                   </div>
+                                                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                                       <div class="card-body">
+                                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                               <div class="card">
+                                                   <div class="card-header" id="headingThree">
+                                                       <h5 class="mb-0">
+                                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                               <i class="flaticon-question"></i> 2019 Second Semester Examination
+                                                           </button>
+                                                       </h5>
+                                                   </div>
+                                                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                       <div class="card-body">
+                                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                               <div class="card">
+                                                   <div class="card-header" id="heading_4">
+                                                       <h5 class="mb-0">
+                                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                                               <i class="flaticon-question"></i> 2019 First Semester Examination
+                                                           </button>
+                                                       </h5>
+                                                   </div>
+                                                   <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion">
+                                                       <div class="card-body">
+                                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                               <div class="card">
+                                                   <div class="card-header" id="heading_5">
+                                                       <h5 class="mb-0">
+                                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                                               <i class="flaticon-question"></i> 2019 <span>Class Assessment (CA)
+                                                                   </span>
+                                                           </button>
+                                                       </h5>
+                                                   </div>
+                                                   <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+                                                       <div class="card-body">
+                                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                                       </div>
+                                                   </div>
+                                               </div>
+                                           </div>
+                               </div>
+                           </div>
+                           <div class="col-xl-5 col-lg-5">
+                               <div class="courses_sidebar">
+                                   <div class="video_thumb">
+                                       <img src="img/latest_blog/video.png" alt="">
+                                       <a class="popup-video" href="https://www.youtube.com/watch?v=AjgD3CvWzS0">
+                                           <i class="fa fa-play"></i>
+                                       </a>
+                                   </div>
+                                   <div class="author_info">
+                                       <div class="auhor_header">
+                                           <div class="thumb">
+                                                   <img src="img/latest_blog/author.png" alt="">
+                                           </div>
+                                           <div class="name">
+                                               <h3>Salathiel Ojage</h3>
+                                               <p>Web Developer</p>
+                                           </div>
+                                       </div>
+                                       <p class="text_info">
+                                           Download and study the questions, be prepared Exams are coming.
+                                       </p>
+                                       <ul>
+                                           <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+                                           <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                                           <li><a href="#"> <i class="ti-linkedin"></i> </a></li>
+                                       </ul>
+                                   </div>
+                                   
+                                   <div class="feedback_info">
+                                       <h3>Write your feedback</h3>
+                                       <p>Your rating</p>
+                                       <i class="flaticon-mark-as-favorite-star"></i>
+                                       <i class="flaticon-mark-as-favorite-star"></i>
+                                       <i class="flaticon-mark-as-favorite-star"></i>
+                                       <i class="flaticon-mark-as-favorite-star"></i>
+                                       <i class="flaticon-mark-as-favorite-star"></i>
+                                       
+                                   <form action="#">
+                                           <textarea name="" id="" cols="30" rows="10" placeholder="Write your feedback"></textarea>
+                                           <button type="submit" class="boxed_btn">Submit</button>
+                                       </form>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                
+                </div>
+                <!-- End of CSC 211 -->
+                <!-- Start of CSC 212 -->
+<div class="courses_details_info6" id="courses_details_info6">
+<div class="courses_details_banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="course_text">
+                       <h3>CSC 212<br>Issues in Computing</h3>
+                       <div class="prise">
+                           <span class="inactive">XAF500</span>
+                           <span class="active">free</span>
+                       </div>
+                       <div class="rating">
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <span>(4.5)</span>
+                       </div>
+                       <div class="hours">
+                           <div class="video">
+                                <div class="single_video">
+                                       <i class="fa fa-clock-o"></i> <span>10 CA Questions</span>
+                                </div>
+                                <div class="single_video">
+                                       <i class="fa fa-play-circle-o"></i> <span>8 Exam Questions</span>
+                                </div>
+                              
+                           </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bradcam_area_end -->
+
+<div class="courses_details_infos" id="courses_details_infos">
+   <div class="container">
+       <div class="row">
+           <div class="col-xl-7 col-lg-7">
+               <div class="single_courses">
+                   <h3>CSC212</h3>
+                   <p>Every course requires the maximum prep time. Not only that but good preparation Resources as well. Every course is different.Keeping this in mind, we have gathered some past questions that you can benefit from. </p>
+               <h3 class="second_title">Course Past Questions Organised by Year</h3>
+               </div>
+               <div class="outline_courses_info">
+                       <div id="accordion">
+                               <div class="card">
+                                   <div class="card-header" id="headingTwo">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                               <i class="flaticon-question"></i> 2020 First Semester Examination
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="Functional Prog.pdf" class="boxed_btn" target="_blank">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="headingOne">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                               <i class="flaticon-question"></i>2020 Class Assessment (CA) </span>
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="headingThree">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                               <i class="flaticon-question"></i> 2019 Second Semester Examination
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="heading_4">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                               <i class="flaticon-question"></i> 2019 First Semester Examination
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="heading_5">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                               <i class="flaticon-question"></i> 2019 <span>Class Assessment (CA)
+                                                   </span>
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+               </div>
+           </div>
+           <div class="col-xl-5 col-lg-5">
+               <div class="courses_sidebar">
+                   <div class="video_thumb">
+                       <img src="img/latest_blog/video.png" alt="">
+                       <a class="popup-video" href="https://www.youtube.com/watch?v=AjgD3CvWzS0">
+                           <i class="fa fa-play"></i>
+                       </a>
+                   </div>
+                   <div class="author_info">
+                       <div class="auhor_header">
+                           <div class="thumb">
+                                   <img src="img/latest_blog/author.png" alt="">
+                           </div>
+                           <div class="name">
+                               <h3>Salathiel Ojage</h3>
+                               <p>Web Developer</p>
+                           </div>
+                       </div>
+                       <p class="text_info">
+                           Download and study the questions, be prepared Exams are coming.
+                       </p>
+                       <ul>
+                           <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+                           <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                           <li><a href="#"> <i class="ti-linkedin"></i> </a></li>
+                       </ul>
+                   </div>
+                   
+                   <div class="feedback_info">
+                       <h3>Write your feedback</h3>
+                       <p>Your rating</p>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       
+                   <form action="#">
+                           <textarea name="" id="" cols="30" rows="10" placeholder="Write your feedback"></textarea>
+                           <button type="submit" class="boxed_btn">Submit</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+</div>
+<!-- End of CSC 212 -->
+<!-- Start of CSC 214 -->
+<div class="courses_details_info7" id="courses_details_info7">
+<div class="courses_details_banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="course_text">
+                       <h3>CSC 214<br>Internet Technologies and Web Design</h3>
+                       <div class="prise">
+                           <span class="inactive">XAF500</span>
+                           <span class="active">free</span>
+                       </div>
+                       <div class="rating">
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <i class="flaticon-mark-as-favorite-star"></i>
+                           <span>(4.5)</span>
+                       </div>
+                       <div class="hours">
+                           <div class="video">
+                                <div class="single_video">
+                                       <i class="fa fa-clock-o"></i> <span>10 CA Questions</span>
+                                </div>
+                                <div class="single_video">
+                                       <i class="fa fa-play-circle-o"></i> <span>8 Exam Questions</span>
+                                </div>
+                              
+                           </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bradcam_area_end -->
+
+<div class="courses_details_infos" id="courses_details_infos">
+   <div class="container">
+       <div class="row">
+           <div class="col-xl-7 col-lg-7">
+               <div class="single_courses">
+                   <h3>CSC214</h3>
+                   <p>Every course requires the maximum prep time. Not only that but good preparation Resources as well. Every course is different.Keeping this in mind, we have gathered some past questions that you can benefit from. </p>
+               <h3 class="second_title">Course Past Questions Organised by Year</h3>
+               </div>
+               <div class="outline_courses_info">
+                       <div id="accordion">
+                               <div class="card">
+                                   <div class="card-header" id="headingTwo">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                               <i class="flaticon-question"></i> 2020 First Semester Examination
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="Functional Prog.pdf" class="boxed_btn" target="_blank">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="headingOne">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                               <i class="flaticon-question"></i>2020 Class Assessment (CA) </span>
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="headingThree">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                               <i class="flaticon-question"></i> 2019 Second Semester Examination
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="heading_4">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                               <i class="flaticon-question"></i> 2019 First Semester Examination
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="card">
+                                   <div class="card-header" id="heading_5">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                               <i class="flaticon-question"></i> 2019 <span>Class Assessment (CA)
+                                                   </span>
+                                           </button>
+                                       </h5>
+                                   </div>
+                                   <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+                                       <div class="card-body">
+                                        <a href="#" class="boxed_btn">Get Questions</a>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+               </div>
+           </div>
+           <div class="col-xl-5 col-lg-5">
+               <div class="courses_sidebar">
+                   <div class="video_thumb">
+                       <img src="img/latest_blog/video.png" alt="">
+                       <a class="popup-video" href="https://www.youtube.com/watch?v=AjgD3CvWzS0">
+                           <i class="fa fa-play"></i>
+                       </a>
+                   </div>
+                   <div class="author_info">
+                       <div class="auhor_header">
+                           <div class="thumb">
+                                   <img src="img/latest_blog/author.png" alt="">
+                           </div>
+                           <div class="name">
+                               <h3>Salathiel Ojage</h3>
+                               <p>Web Developer</p>
+                           </div>
+                       </div>
+                       <p class="text_info">
+                           Download and study the questions, be prepared Exams are coming.
+                       </p>
+                       <ul>
+                           <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
+                           <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+                           <li><a href="#"> <i class="ti-linkedin"></i> </a></li>
+                       </ul>
+                   </div>
+                   
+                   <div class="feedback_info">
+                       <h3>Write your feedback</h3>
+                       <p>Your rating</p>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       <i class="flaticon-mark-as-favorite-star"></i>
+                       
+                   <form action="#">
+                           <textarea name="" id="" cols="30" rows="10" placeholder="Write your feedback"></textarea>
+                           <button type="submit" class="boxed_btn">Submit</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+</div>
+<!-- End of CSC 214 -->
+    <!-- our_courses_start -->
+    <div class="our_courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>What we are known for</h3>
+                        <p>We pride ourselves in our quality service which<br>
+                            enables everyone learn effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-art-and-design"></i>
+                        </div>
+                        <h3>Quality Photos</h3>
+                        <p>
+                            Photos are of Outstanding quality
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon blue">
+                            <i class="flaticon-business-and-finance"></i>
+                        </div>
+                        <h3>Downloadable PDF's</h3>
+                        <p>
+                            Study any time, even without an active internet connection.<br>  <br>
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-premium"></i>
+                        </div>
+                        <h3>Top quality Resume product</h3>
+                        <p>
+                            Oh there are testimonies<br> for <br>
+                            all sort of CV's
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon gradient">
+                            <i class="flaticon-crown"></i>
+                        </div>
+                        <h3>Trusted Sources </h3>
+                        <p>
+                            Information is vital to success<br> and <br>
+                            even more important
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our_courses_end -->
+
+    <!-- subscribe_newsletter_Start -->
+    <div class="subscribe_newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="newsletter_text">
+                        <h3>Subscribe to our Newsletter</h3>
+                        <p>Stay updated about new posts, questions and more directly in your inbox</p>
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="newsletter_form">
+                        <h4></h4>
+                        <form action="#" class="newsletter_form">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- subscribe_newsletter_end -->
+
+    <!-- our_latest_blog_start -->
+    <div class="our_latest_blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>Our Latest Blog</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="img/latest_blog/1.png" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>12 Feb, 2020 :: <a href="#">camaster</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="#">Book Launch by Professor Ayonghe Samuel</a></h3>
+                            </div>
+                            <p class="blog_text">
+                                Engaging the University of Buea with it's Local community workshops
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="img/latest_blog/2.png" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>12 Feb, 2020 :: <a href="#">camaster</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="#">Two Valedictorians at 23 <sup>rd</sup> convocation </a></h3>
+                            </div>
+                            <p class="blog_text">
+                                Two Valedictorians at 23 <sup>rd</sup> convocation; <b>Ndah Renata Angwi</b> of the Faculty of
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_latest_blog">
+                        <div class="thumb">
+                            <img src="img/latest_blog/3.png" alt="">
+                        </div>
+                        <div class="content_blog">
+                            <div class="date">
+                                <p>12 Feb, 2020 :: <a href="#">camaster</a></p>
+                            </div>
+                            <div class="blog_meta">
+                                <h3><a href="#">Two Valedictorians at 23 <sup>rd</sup> convocation </a></h3>
+                            </div>
+                            <p class="blog_text">
+                                Two Valedictorians at 23 <sup>rd</sup> convocation; <b>Ndah Renata Angwi</b> of the Faculty of.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our_latest_blog_end -->
+
+
+
+    <!-- footer -->
+    <footer class="footer footer_bg_1">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                            <p>
+                                The Univeersity of Buea provides degree prgrammes that continue to bring in thousands of 
+                                applications from within the country and abroad. <br>
+                                As Camuniv, our Job is to make the learning process both Fun and Effective.
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Departments
+                            </h3>
+                            <ul>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#"> Linguistics</a></li>
+                                <li><a href="#">Mathematics</a></li>
+                                <li><a href="#">J M C</a></li>
+                                <li><a href="#">Banking and Finance</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Resources
+                            </h3>
+                            <ul>
+                                <li><a href="#">Career Guide</a></li>
+                                <li><a href="https://ub.go-student./public/index.php/admission_programs">Online Application</a></li>
+                                <li><a href="#">Chariot FM</a></li>
+                                <li><a href="#">N A T I V E.com</a></li>
+                                <li><a href="#">Registrar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Address
+                            </h3>
+                            <p>
+                                Cameroon, Buea, Molyko, Tarred Malingo<br>
+                                +237 671 206 823 <br>
+                                camuniv@info.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                           
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | I   <i class="fa fa-heart-o" aria-hidden="true"></i>  <a href="https://colorlib.com" target="_blank"> N  A  T  I  V  E </a>  Sites
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <!-- form itself end-->
+    <form id="test-form" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <div class="logo text-center">
+                    <a href="#">
+                        <img src="img/form-logo.png" alt="">
+                    </a>
+                </div>
+                <h3>Sign in</h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                            <input type="email" placeholder="Enter email">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed_btn_orange">Sign in</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="doen_have_acc">Don’t have an account? <a class="dont-hav-acc" href="#test-form2">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </form>
+    <!-- form itself end -->
+
+    <!-- form itself end-->
+    <form id="test-form2" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <div class="logo text-center">
+                    <a href="#">
+                        <img src="img/form-logo.png" alt="">
+                    </a>
+                </div>
+                <h3>Resistration</h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                            <input type="email" placeholder="Enter email">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="Password" placeholder="Confirm password">
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed_btn_orange">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+    <!-- form itself end -->
+
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/writeintolevel.js"></script>
+    <!-- Courses arranged here -->
+    <script src="js/writeintolevel1.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
