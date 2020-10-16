@@ -84,13 +84,13 @@ function ChangeSecondList(value) {
         }
     }
 }
-//what I'm gonna Use
+//what I am going to use...
 function dynamicdropdown(listindex)
     {
         switch (listindex)
         {
         case "lvl200" :
-            document.getElementById("fac").options[0]=new Option("Select Facultyinfxn","");
+            document.getElementById("fac").options[0]=new Option("Select Faculty","");
             document.getElementById("fac").options[1]=new Option("Faculty of Arts","fa1");
             document.getElementById("fac").options[2]=new Option("Faculty of Science","fs1");
 			document.getElementById("fac").options[3]=new Option("Faculty of Education","fed1");
@@ -132,21 +132,21 @@ function    dynamicdropdown1(listindex){
     switch(listindex){
         //Departments for the for the faculty of Arts Levels 200,300 & 400 respectively
         case "fa1":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en1");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr1");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht1");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln1");
             break;
         case "fa2":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en2");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr2");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht2");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln2");
             break;
         case "fa3":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en3");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr3");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht3");
@@ -154,7 +154,7 @@ function    dynamicdropdown1(listindex){
             break;
              //Departments for the for the faculty of Science Levels 200,300 & 400 respectively
          case "fs1":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of Biochemistry and Molecular Biology","bmb1");
             document.getElementById("dept").options[2]=new Option("Deparment of Botany and Plant Physiology","bpp1");
 			document.getElementById("dept").options[3]=new Option("Deparment of Chemistry","chm1");
@@ -167,7 +167,7 @@ function    dynamicdropdown1(listindex){
             break;
           
         case "fs2":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of Biochemistry and Molecular Biology","bmb2");
             document.getElementById("dept").options[2]=new Option("Deparment of Botany and Plant Physiology","bpp2");
 			document.getElementById("dept").options[3]=new Option("Deparment of Chemistry","chm2");
@@ -179,7 +179,7 @@ function    dynamicdropdown1(listindex){
             document.getElementById("dept").options[9]=new Option("Deparment of Zoology and Animal Physiology","zap2");
             break;
         case "fs3":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of Biochemistry and Molecular Biology","bmb3");
             document.getElementById("dept").options[2]=new Option("Deparment of Botany and Plant Physiology","bpp3");
 			document.getElementById("dept").options[3]=new Option("Deparment of Chemistry","chm3");
@@ -192,65 +192,72 @@ function    dynamicdropdown1(listindex){
             break;
              //Departments for the for the faculty of Education Levels 200,300 & 400 respectively
          case "fed1":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
-            document.getElementById("dept").options[1]=new Option("Department of English","en1");
-            document.getElementById("dept").options[2]=new Option("Deparment of French","fr1");
-			document.getElementById("dept").options[3]=new Option("Deparment of History","ht1");
-            document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln1");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
+            document.getElementById("dept").options[1]=new Option("Department of CST","cst1");
+            document.getElementById("dept").options[2]=new Option("Deparment of EFA","efa1");
+			document.getElementById("dept").options[3]=new Option("Deparment of EPY","epy1");
+            document.getElementById("dept").options[4]=new Option("Deparment of REF","ref1");
             break;
         case "fed2":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
-            document.getElementById("dept").options[1]=new Option("Department of English","en2");
-            document.getElementById("dept").options[2]=new Option("Deparment of French","fr2");
-			document.getElementById("dept").options[3]=new Option("Deparment of History","ht2");
-            document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln2");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
+            document.getElementById("dept").options[1]=new Option("Department of CST","cst2");
+            document.getElementById("dept").options[2]=new Option("Deparment of EFA","efa2");
+			document.getElementById("dept").options[3]=new Option("Deparment of EPY","epy2");
+            document.getElementById("dept").options[4]=new Option("Deparment of REF","ref2");
             break;
         case "fed3":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
-            document.getElementById("dept").options[1]=new Option("Department of English","en3");
-            document.getElementById("dept").options[2]=new Option("Deparment of French","fr3");
-			document.getElementById("dept").options[3]=new Option("Deparment of History","ht3");
-            document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln3");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
+            document.getElementById("dept").options[1]=new Option("Department of CST","cst3");
+            document.getElementById("dept").options[2]=new Option("Deparment of EFA","efa3");
+			document.getElementById("dept").options[3]=new Option("Deparment of EPY","epy3");
+            document.getElementById("dept").options[4]=new Option("Deparment of REF","ref3");
             break;
              //Departments for the for the faculty of LAw and Political Science Levels 200,300 & 400 respectively
          case "flps1":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en1");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr1");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht1");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln1");
             break;
         case "flps2":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en2");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr2");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht2");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln2");
             break;
         case "flps3":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en3");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr3");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht3");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln3");
             break;
-             //Departments for the for the faculty of Engineering & Technology Levels 200,300 & 400 respectively
+             //Departments for the for the faculty of Engineering & Technology Levels 200,300, 400 & 500 respectively
          case "fet1":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en1");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr1");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht1");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln1");
             break;
         case "fet2":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en2");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr2");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht2");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln2");
             break;
         case "fet3":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
+            document.getElementById("dept").options[1]=new Option("Department of English","en3");
+            document.getElementById("dept").options[2]=new Option("Deparment of French","fr3");
+			document.getElementById("dept").options[3]=new Option("Deparment of History","ht3");
+            document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln3");
+            break;
+        case "fet4":
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en3");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr3");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht3");
@@ -258,21 +265,21 @@ function    dynamicdropdown1(listindex){
             break;
          //Departments for the for the faculty of Health Sciences Levels 200,300 & 400 respectively
          case "fhs1":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en1");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr1");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht1");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln1");
             break;
         case "fhs2":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en2");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr2");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht2");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln2");
             break;
         case "fhs3":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en3");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr3");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht3");
@@ -280,21 +287,21 @@ function    dynamicdropdown1(listindex){
             break;
          //Departments for the for the faculty of Social and MAnagement Sciences 200,300 & 400 respectively
          case "fsms1":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en1");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr1");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht1");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln1");
             break;
         case "fsms2":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en2");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr2");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht2");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln2");
             break;
         case "fsms3":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en3");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr3");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht3");
@@ -302,21 +309,21 @@ function    dynamicdropdown1(listindex){
             break;
          //Departments for the for the faculty of Agriculture & veterinary Medicine Levels 200,300 & 400 respectively
          case "favm1":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en1");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr1");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht1");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln1");
             break;
         case "favm2":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en2");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr2");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht2");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln2");
             break;
         case "favm3":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en3");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr3");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht3");
@@ -324,21 +331,21 @@ function    dynamicdropdown1(listindex){
             break;
          //Departments for the for the College Of Technology Levels 200,300 & 400 respectively
          case "cot1":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en1");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr1");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht1");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln1");
             break;
         case "cot2":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en2");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr2");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht2");
             document.getElementById("dept").options[4]=new Option("Deparment of Linguistics","ln2");
             break;
         case "cot3":
-            document.getElementById("dept").options[0]=new Option("Select Departmentinfxn","");
+            document.getElementById("dept").options[0]=new Option("Select Department","");
             document.getElementById("dept").options[1]=new Option("Department of English","en3");
             document.getElementById("dept").options[2]=new Option("Deparment of French","fr3");
 			document.getElementById("dept").options[3]=new Option("Deparment of History","ht3");
