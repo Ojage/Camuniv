@@ -1,0 +1,105 @@
+#theMain {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 200px;
+    margin-left: 2px;
+    
+}
+h2,h5,h6 {
+    color: #3e1882;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    margin-right: 100px;
+    margin-left: 80px;
+}
+h6{color: #56ac92;}
+
+#theMain #credits{color: gray; margin-left: 80px;border: 1px solid #c6c9c6;}
+#theMain #support{font-style: italic; color: black; margin-left: 80px; text-align: center;}
+#theMain #support a{font-style: oblique; color: #3e1882; margin-left: 80px; text-align: center;}
+#theMain p{color: black; margin-left: 80px;}
+p span{
+    background-color: thistle;
+    color: teal;
+    cursor: pointer;
+}
+#earlyHistory{
+    margin-left: 80px;
+    border: solid;
+    border-left: #3e1882;
+}
+#container{
+    border: 1px solid blue;
+    padding: 15px;
+    height: auto;
+    width: auto;
+    position: relative;
+}
+#box, #box-2{
+    width: 1000px;
+    height: auto;
+    background: gainsboro;
+}
+#box-2{
+    width:337px;
+    height: 114pc;
+    background: #dfdbe6;
+    position: absolute;
+    top: 19px;
+    left: 1015px;
+
+}
+#recHead{
+    color: wheat;
+    background: #3e1882;
+    border-bottom: solid 1px;
+    position: absolute;
+    left: 0;
+}
+
+div.gallery {
+    position: relative;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 330px;
+    top: 50px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+#modDate{
+    font-size: x-small;
+}
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #3e1882;
+    color: white;
+    border: 1px solid #3e1882;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}

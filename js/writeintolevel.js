@@ -14,10 +14,10 @@ for (const option of document.querySelectorAll(".custom-option")) {
 }
 
 // This section allows for the closing of dropdown list, if user clicks out of dropdown.
-window.addEventListener('click', function(e) {
-    const select = document.querySelector('.custom-select')
-    if (!select.contains(e.target)) {
-        select.classList.remove('open');
+window.addEventListener('click', function(e) { //Makes an Event Listener
+    const select = document.querySelector('.custom-select') //Makes a constant called select that references the class custom-select
+    if (!select.contains(e.target)) { // If the constant contains the target of the event
+        select.classList.remove('open'); 
     }
 })
 

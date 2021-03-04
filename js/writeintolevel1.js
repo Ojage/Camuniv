@@ -68,18 +68,19 @@ function    dynamicdropdown2(listindex){
             document.getElementById("course").options[5]=new Option("CSC 313 Calculus and Differential Integration","csc313");
             //second Semester
             document.getElementById("course").options[6]=new Option("CSC 308 Java Programming","csc308");
-            document.getElementById("course").options[7]=new Option("CSC 310 Databases Design","csc310");
+            document.getElementById("course").options[7]=new Option("CSC 306 Human Computer Interaction","csc306");
 			document.getElementById("course").options[8]=new Option("CSC 208 Programming in Python","csc208");
             document.getElementById("course").options[9]=new Option("CSC 212 Computer Ethics","csc212");
             break;
         case "bpp3":
            //first Semester
            document.getElementById("course").options[0]=new Option("Select Course","");
-           document.getElementById("course").options[1]=new Option("CSC 405 Data Structures and Algorithms","csc301");
-           document.getElementById("course").options[2]=new Option("CSC 407 Computer Organisation and Architecture","csc303");
-           document.getElementById("course").options[3]=new Option("CSC 413 Introduction to Object Oriented Programming","csc305");
-           document.getElementById("course").options[4]=new Option("CSC 419 Networking","csc311");
-           document.getElementById("course").options[5]=new Option("CSC 313 Calculus and Differential Integration","csc313");
+           document.getElementById("course").options[1]=new Option("CSC 405 Artificial Intelligence","csc405");
+           document.getElementById("course").options[2]=new Option("CSC 407 Programming Language Paradigms","csc407");
+           document.getElementById("course").options[3]=new Option("CSC 413 Mobile App Development","csc405");
+           document.getElementById("course").options[4]=new Option("CSC 419 Introductory Process Algebra","csc419");
+           
+           
            //second Semester
            document.getElementById("course").options[6]=new Option("CSC 308 Java Programming","csc308");
            document.getElementById("course").options[7]=new Option("CSC 310 Databases Design","csc310");
@@ -144,29 +145,28 @@ function    dynamicdropdown2(listindex){
             document.getElementById("course").options[8]=new Option("CSC 212 Computer Ethics","csc212");
             break;
         case "csc2":
-            //first Semester
-            document.getElementById("course").options[0]=new Option("Select Course","");
-            document.getElementById("course").options[1]=new Option("CSC 301 Data Structures and Algorithms","csc301");
-            document.getElementById("course").options[2]=new Option("CSC 303 Computer Organisation and Architecture","csc303");
-			document.getElementById("course").options[3]=new Option("CSC 305 Introduction to Object Oriented Programming","csc305");
-            document.getElementById("course").options[4]=new Option("CSC 311 Networking","csc311");
-            document.getElementById("course").options[5]=new Option("CSC 313 Calculus and Differential Integration","csc313");
-            //second Semester
-            document.getElementById("course").options[6]=new Option("CSC 308 Java Programming","csc308");
-            document.getElementById("course").options[7]=new Option("CSC 310 Databases Design","csc310");
-			document.getElementById("course").options[8]=new Option("CSC 208 Programming in Python","csc208");
-            document.getElementById("course").options[9]=new Option("CSC 212 Computer Ethics","csc212");
-            break;
-        case "csc3":
            //first Semester
            document.getElementById("course").options[0]=new Option("Select Course","");
-           document.getElementById("course").options[1]=new Option("CSC 405 Data Structures and Algorithms","csc301");
-           document.getElementById("course").options[2]=new Option("CSC 407 Computer Organisation and Architecture","csc303");
-           document.getElementById("course").options[3]=new Option("CSC 413 Introduction to Object Oriented Programming","csc305");
-           document.getElementById("course").options[4]=new Option("CSC 419 Networking","csc311");
+           document.getElementById("course").options[1]=new Option("CSC 301 Data Structures and Algorithms","csc301");
+           document.getElementById("course").options[2]=new Option("CSC 303 Computer Organisation and Architecture","csc303");
+           document.getElementById("course").options[3]=new Option("CSC 305 Introduction to Object Oriented Programming","csc305");
+           document.getElementById("course").options[4]=new Option("CSC 311 Networking","csc311");
            document.getElementById("course").options[5]=new Option("CSC 313 Calculus and Differential Integration","csc313");
            //second Semester
            document.getElementById("course").options[6]=new Option("CSC 308 Java Programming","csc308");
+           document.getElementById("course").options[7]=new Option("CSC 306 Human Computer Interaction","csc306");
+           document.getElementById("course").options[8]=new Option("CSC 314 Operating Systems","csc314");
+           document.getElementById("course").options[9]=new Option("CSC 316 Functional Programming","csc316");
+           break;
+        case "csc3":
+           //first Semester
+           document.getElementById("course").options[0]=new Option("Select Course","");
+           document.getElementById("course").options[1]=new Option("CSC 405 Artificial Intelligence","csc405");
+           document.getElementById("course").options[2]=new Option("CSC 407 Programming Paradigms","csc407");
+           document.getElementById("course").options[3]=new Option("CSC 413 Mobile Application Development","csc413");
+           document.getElementById("course").options[4]=new Option("CSC 419 Introductory Process Algebra","csc419");
+           //second Semester
+           document.getElementById("course").options[6]=new Option("CSC 498 Project Writing","csc498");
            document.getElementById("course").options[7]=new Option("CSC 310 Databases Design","csc310");
            document.getElementById("course").options[8]=new Option("CSC 208 Programming in Python","csc208");
            document.getElementById("course").options[9]=new Option("CSC 212 Computer Ethics","csc212");
@@ -464,7 +464,9 @@ function dynamicCourseDetails(listindex) {
 
     switch (listindex) {
         case "csc205":
-            document.getElementById("courses_details_info1").style.display = "block"
+            // Redirect the user to the csc205 special Page "CSC205TUTS.html"
+            window.location.assign("./CourseMaterials/ComputerScience/LvL200/FirstSemester/csc205Tuts.html")
+            
             break;
         case "csc207":
             document.getElementById("courses_details_info2").style.display = "block"
@@ -492,100 +494,158 @@ function dynamicCourseDetails(listindex) {
     }return true;
 }
 
-// For Computer Science
-function dynamicCourseDetails(listindex) {
+// // For Computer Science
+// function dynamicCourseDetails(listindex) {
 
-    switch (listindex) {
-        case "csc205":
-            document.getElementById("courses_details_info1").style.display = "block"
-            break;
-        case "csc207":
-            document.getElementById("courses_details_info2").style.display = "block"
-            break;
-        case "csc209":
-            document.getElementById("courses_details_info3").style.display = "block"
-            break;
-        case "csc210":
-            document.getElementById("courses_details_info4").style.display = "block"
-            break;
-        case "csc211":
-            document.getElementById("courses_details_info5").style.display = "block"
-            break;
-        case "csc212":
-            document.getElementById("courses_details_info6").style.display = "block"
-            break;
-        case "csc214":
-            document.getElementById("courses_details_info7").style.display = "block"
-            break;
-        case "csc208":
-            document.getElementById("courses_details_info8").style.display = "block"
-            break;
+//     switch (listindex) {
+//         case "csc205":
+//             document.getElementById("courses_details_info1").style.display = "block"
+//             break;
+//         case "csc207":
+//             document.getElementById("courses_details_info2").style.display = "block"
+//             break;
+//         case "csc209":
+//             document.getElementById("courses_details_info3").style.display = "block"
+//             break;
+//         case "csc210":
+//             document.getElementById("courses_details_info4").style.display = "block"
+//             break;
+//         case "csc211":
+//             document.getElementById("courses_details_info5").style.display = "block"
+//             break;
+//         case "csc212":
+//             document.getElementById("courses_details_info6").style.display = "block"
+//             break;
+//         case "csc214":
+//             document.getElementById("courses_details_info7").style.display = "block"
+//             break;
+//         case "csc208":
+//             document.getElementById("courses_details_info8").style.display = "block"
+//             break;
     
         
-    }return true;
-}
+//     }return true;
+// }
 
-// For Computer Science
-function dynamicCourseDetails(listindex) {
+// // For Computer Science
+// function dynamicCourseDetails(listindex) {
 
-    switch (listindex) {
-        case "csc205":
-            document.getElementById("courses_details_info1").style.display = "block"
-            break;
-        case "csc207":
-            document.getElementById("courses_details_info2").style.display = "block"
-            break;
-        case "csc209":
-            document.getElementById("courses_details_info3").style.display = "block"
-            break;
-        case "csc210":
-            document.getElementById("courses_details_info4").style.display = "block"
-            break;
-        case "csc211":
-            document.getElementById("courses_details_info5").style.display = "block"
-            break;
-        case "csc212":
-            document.getElementById("courses_details_info6").style.display = "block"
-            break;
-        case "csc214":
-            document.getElementById("courses_details_info7").style.display = "block"
-            break;
-        case "csc208":
-            document.getElementById("courses_details_info8").style.display = "block"
-            break;
+//     switch (listindex) {
+//         case "csc205":
+//             document.getElementById("courses_details_info1").style.display = "block"
+//             break;
+//         case "csc207":
+//             document.getElementById("courses_details_info2").style.display = "block"
+//             break;
+//         case "csc209":
+//             document.getElementById("courses_details_info3").style.display = "block"
+//             break;
+//         case "csc210":
+//             document.getElementById("courses_details_info4").style.display = "block"
+//             break;
+//         case "csc211":
+//             document.getElementById("courses_details_info5").style.display = "block"
+//             break;
+//         case "csc212":
+//             document.getElementById("courses_details_info6").style.display = "block"
+//             break;
+//         case "csc214":
+//             document.getElementById("courses_details_info7").style.display = "block"
+//             break;
+//         case "csc208":
+//             document.getElementById("courses_details_info8").style.display = "block"
+//             break;
     
         
-    }return true;
-}
-// For Computer Science
-function dynamicCourseDetails(listindex) {
+//     }return true;
+// }
+// // For Computer Science
+// function dynamicCourseDetails(listindex) {
 
-    switch (listindex) {
-        case "csc205":
-            document.getElementById("courses_details_info1").style.display = "block"
-            break;
-        case "csc207":
-            document.getElementById("courses_details_info2").style.display = "block"
-            break;
-        case "csc209":
-            document.getElementById("courses_details_info3").style.display = "block"
-            break;
-        case "csc210":
-            document.getElementById("courses_details_info4").style.display = "block"
-            break;
-        case "csc211":
-            document.getElementById("courses_details_info5").style.display = "block"
-            break;
-        case "csc212":
-            document.getElementById("courses_details_info6").style.display = "block"
-            break;
-        case "csc214":
-            document.getElementById("courses_details_info7").style.display = "block"
-            break;
-        case "csc208":
-            document.getElementById("courses_details_info8").style.display = "block"
-            break;
-    
-        
-    }return true;
-}
+//     switch (listindex) {
+//         //Level 200
+//         case "csc205":
+//             document.getElementById("courses_details_info1").style.display = "block"
+//             break;
+//         case "csc207":
+//             document.getElementById("courses_details_info2").style.display = "block"
+//             break;
+//         case "csc209":
+//             document.getElementById("courses_details_info3").style.display = "block"
+//             break;
+//         case "csc210":
+//             document.getElementById("courses_details_info4").style.display = "block"
+//             break;
+//         case "csc211":
+//             document.getElementById("courses_details_info5").style.display = "block"
+//             break;
+//         case "csc212":
+//             document.getElementById("courses_details_info6").style.display = "block"
+//             break;
+//         case "csc214":
+//             document.getElementById("courses_details_info7").style.display = "block"
+//             break;
+//         case "csc208":
+//             document.getElementById("courses_details_info8").style.display = "block"
+//             break;
+//         case "csc208":
+//             document.getElementById("courses_details_info9").style.display = "block"
+//             break;
+//     //Level 300
+//         case "csc301":
+//             document.getElementById("courses_details_info1_2").style.display = "block"
+//             break;
+//         case "csc303":
+//             document.getElementById("courses_details_info2_2").style.display = "block"
+//             break;
+//         case "csc305":
+//             document.getElementById("courses_details_info3_2").style.display = "block"
+//             break;
+//         case "csc308":
+//             document.getElementById("courses_details_info4_2").style.display = "block"
+//             break;
+//         case "csc211":
+//             document.getElementById("courses_details_info5_2").style.display = "block"
+//             break;
+//         case "csc310":
+//             document.getElementById("courses_details_info6_2").style.display = "block"
+//             break;
+//         case "csc311":
+//             document.getElementById("courses_details_info7_2").style.display = "block"
+//             break;
+//         case "csc314":
+//             document.getElementById("courses_details_info8_2").style.display = "block"
+//             break;
+//         case "csc316":
+//             document.getElementById("courses_details_info9_2").style.display = "block"
+//             break;
+//         //Level 400
+//         case "csc403":
+//             document.getElementById("courses_details_info1_3").style.display = "block"
+//             break;
+//         case "csc405":
+//             document.getElementById("courses_details_info2_3").style.display = "block"
+//             break;
+//         case "csc407":
+//             document.getElementById("courses_details_info3_3").style.display = "block"
+//             break;
+//         case "csc413":
+//             document.getElementById("courses_details_info4_3").style.display = "block"
+//             break;
+//         case "csc419":
+//             document.getElementById("courses_details_info5_3").style.display = "block"
+//             break;
+//         case "csc498":
+//             document.getElementById("courses_details_info6_3").style.display = "block"
+//             break;
+//         case "csc4xx":
+//             document.getElementById("courses_details_info7_3").style.display = "block"
+//             break;
+//         case "csc4xx":
+//             document.getElementById("courses_details_info8_2").style.display = "block"
+//             break;
+//         case "csc4xx":
+//             document.getElementById("courses_details_info9_2").style.display = "block"
+//             break;
+//     }return true;
+// }

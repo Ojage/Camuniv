@@ -1,3 +1,66 @@
-.courses_details_info1,.courses_details_info2,.courses_details_info3,.courses_details_info4,.courses_details_info5,.courses_details_info6,.courses_details_info7{
+.courses_details_info1,.courses_details_info2,.courses_details_info3,.courses_details_info4,.courses_details_info5,.courses_details_info6,.courses_details_info7,.courses_details_info8,.courses_details_info9
+,.courses_details_info1_2,.courses_details_info2_2,.courses_details_info3_2,.courses_details_info4_2,.courses_details_info5_2,.courses_details_info6_2,.courses_details_info7_2,.courses_details_info8_2,.courses_details_info9_2
+,.courses_details_info1_3,.courses_details_info2_3,.courses_details_info3_3,.courses_details_info4_3,.courses_details_info5_3,.courses_details_info6_3,.courses_details_info7_3,.courses_details_info8_3,.courses_details_info9_3
+{
     display: none;
+}
+/* 14. Events */
+
+
+.event_items
+{
+	margin-top: 68px;
+}
+.event_item
+{
+	margin-bottom: 56px;
+}
+.event_item:last-child
+{
+	margin-bottom: 0px;
+}
+.event_date
+{
+	width: 131px;
+	height: 131px;
+	border: solid 2px rgb(151, 75, 235);
+	margin-bottom: 18px;
+}
+.event_day
+{
+	font-size: 48px;
+	font-weight: 700;
+	color: rgb(151, 75, 235);
+	margin-bottom: 1px;
+	line-height: 1;
+}
+.event_month
+{
+	font-size: 16px;
+	font-weight: 700;
+	color: rgb(151, 75, 235);
+}
+.event_name a
+{
+	font-size: 22px;
+	font-weight: 500;
+	color: #1a1a1a;
+}
+.event_name a:hover
+{
+	color: rgb(151, 75, 235);
+}
+.event_location
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #1a1a1a;
+	margin-top: 2px;
+}
+.event_content p
+{
+	font-weight: 500;
+	color: #a5a5a5;
+	margin-top: 21px;
+	margin-bottom: 13px;
 }
